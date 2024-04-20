@@ -14,6 +14,7 @@ async function saveToCloudStoarage(event) {
     );
     event.target.reset();
     alert(response.data.message);
+    window.location.href = "./expensetracker.html"; //using anchor tag after login redirecting user to the page expensetracker.html
   } catch (error) {
     const errorMessage = error.message || "An error occured";
     const errorHtml = `
